@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tourism</title>
+    <link rel="stylesheet" href="tra.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                TREKMATE AGENCY
+            </div>
+            <div class="texts"><a href="#page1"><p>Home</p></div></a>
+            <div class="texts"><a href="#grievance"><p>Grievance</p></div></a>
+            <button onclick="scrolltoservices()"><div class="texts"><p>Services</p></div></button>
+            <button onclick="scrolltopackages()"><div class="texts"><p>Packages</p></div></button>
+            <button onclick="scrolltoreview()"><div class="texts"><p>Review</p></div></button>
+            <button onclick="scrollToContact()"><div class="texts"><p>Contact Us</p></div></button>
+            <div id="login-section">
+                
+                <button id="loginform"><p>Login</p>
+                <i class="ri-user-line"></i></button>
+                <div id="login-form" style="display: none;">
+                    <form name="f2" method="get">
+                        <legend>Login form</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" name="t1" maxlength="20" placeholder="Name">
+                        <label for="password">Password:</label>
+                        <input type="password" name="t2" placeholder="password">
+                        <input type="submit" value="Login">
+                    </form>
+                </div>
+            </div>
+        </div>    
+        <div id="fakeheader"></div>
+        <nav>
+            <div ng-app=""
+          <i class="ri-search-line"></i><input type="text" id="searchInput" ng-model="mumb" placeholder="Search for a place..." onkeyup="searchPlace()" />
+            <p>your search:{{mumb}}</p>
+            <div id="searchResults"></div>
+        </nav>
+        <div id="page1">
+            
+            <h1>Welcome</h1>
+            <h2>To Our Website!</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cumque atque eius amet minus reiciendis beatae velit, molestias necessitatibus. Consequatur aperiam laborum maiores error placeat pariatur, officiis recusandae iste animi!</h3>
+            <button onclick="openVideo()">Explore More</button>
+            <button onclick="showModal()">BOOK NOW <i class="ri-arrow-right-fill"></i></button>
+            <div id="bookingModal" class="modal">
+                <form id="bookingform" name="f1" method="post" action="https://script.google.com/macros/s/AKfycbzVXFCpHKqq3FOrPUNtrZghEg5b3LMnF5iMe1wvJftKbK86-8MvjZxHpTn_8EyQQC6ggQ/exec" onsubmit="return handleBookingSubmit()">
+                    <legend><h2><u>Booking Form</u></h2></legend>
+                    <label for="name">Name:</label>
+                    <input type="text" name="t1" maxlength="20" placeholder="Name">
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" name="t3" placeholder="Mobile no.">
+                    <label for="email">Email ID:</label>
+                    <input type="email" name="email" placeholder="Email id">
+                    <label for="aadhar">Aadhar Number:</label>
+                    <input type="number" name="AADHAR" placeholder="Aadhar number">
+                    <label for="source">Source:</label>
+                    <input type="text" name="t2" placeholder="From">
+                    <label for="destination">Destination:</label>
+                    <input type="text" name="t6" placeholder="To">
+                    <label for="date">Date:</label>
+                    <input type="date" name="t4" placeholder="Date">
+                    <input type="submit" value="Submit Booking">
+                    <input type="reset" value="Reset">
+                </form>
+                <button onclick="hideModal()">Close</button>
+            </div>
+            <video class="video-slide" src="https://cdn.pixabay.com/video/2024/08/05/225046_tiny.mp4" autoplay muted loop></video>
+        </div>
+        <div id="page2">
+            <b>Our Services</b>
+            <p></p>
+            <div id="services">
+                <div id="card1"><i class="ri-treasure-map-fill"></i>Adventure</div>
+                <div id="card2"><i class="ri-guide-fill"></i>Tour guide</div>
+                <div id="card3">
+                    <i class="ri-plane-fill ri-3x"></i>
+                    <h6> International Flight booking</h6>
+                </div>
+                <div id="card4">
+                    <i class="ri-hotel-fill ri-3x"></i>Hotel Booking</div>
+                <div id="card5"><i class="ri-id-card-line"></i>Visa Assistance</div>
+            </div>
+        </div>
+        <div id="page3">
+            <b>Our Best Packages</b>
+            <p></p>
+            <div id="packages">
+                <div class="boxes">
+                    <u>Hampi, Karnataka</u>
+                    <img src="https://media.istockphoto.com/id/1343698748/photo/ancient-stone-ruins-at-hampi-karnataka-india.jpg?s=1024x1024&w=is&k=20&c=72ItHn378WJuNnagG3JPawrfl5gyUX0wN5-BXPGQLBE=" alt="Hampi">
+                    <p>Information: Hampi, a UNESCO World Heritage Site, is renowned for its ancient temples, ruins of palaces, and a historical bazaar. The Virupaksha Temple and Vittala Temple with its musical pillars are major attractions here.</p>
+                    <button onclick="showPrice()">More info</button>
+                    <div id="price-content" style="display: none;">
+                        <h1>Prices:</h1>
+                        <h5>- <u>Road:</u> ₹500-₹1,500 by bus; ₹2,000-₹3,000 by car from Bangalore, with a journey time of 6-8 hours.
+                            - <u>Rail:</u> ₹300-₹1,000 to Hospet Junction, the nearest station, about 13 km from Hampi.
+                            - <u>Air:</u> ₹2,500-₹5,000 to Hubli or Belgaum, then ₹1,500-₹2,500 for a taxi or bus to Hampi, totaling around 6-7 hours travel time.</h5>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <u>Taj Mahal, Agra</u>
+                    <img src="https://media.istockphoto.com/id/159371791/photo/taj-mahal-india.webp?b=1&s=170667a&w=0&k=20&c=IPjo8c4hGjc0AK0rwOjviG9q8vug3-pHbgoyq6SBOtI=" alt="Taj Mahal">
+                    <p>Description: Taj Mahal, the iconic symbol of love, is one of the Seven Wonders of the World. Its stunning white marble architecture draws millions of visitors every year.</p>
+                    <button onclick="showPrice1()">More info</button>
+                    <div id="price-content1" style="display: none;">
+                        <h1>Prices:</h1>
+                        <h5>- <u>Road:</u> ₹500-₹1,500 by bus; ₹2,000-₹3,000 by car from agra, with a journey time of 6-8 hours.
+                            - <u>Rail:</u> ₹300-₹1,000 to taj Junction, the nearest station, about 13 km from agra.
+                            - <u>Air:</u> ₹2,500-₹5,000 to agra, then ₹1,500-₹2,500 for a taxi or bus to agra, totaling around 6-7 hours travel time.</h5>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <u>Mahabaleshwar, Maharashtra</u>
+                    <img src="https://media.istockphoto.com/id/1060805460/photo/a-grid-on-the-fort.webp?b=1&s=170667a&w=0&k=20&c=a8XD7kHm-CAj4Few8kFFbaVDCNMpmGxE2ecbRLD-pnk=" alt="Mahabaleshwar">
+                    <p>Description: Mahabaleshwar, known for its scenic beauty, strawberry farms, and pleasant weather, is a popular hill station in Maharashtra.</p>
+                    <button onclick="showPrice2()">More info</button>
+                    <div id="price-content2" style="display: none;">
+                        <h1>Prices:</h1>
+                        <h5>- <u>Road:</u> ₹500-₹1,500 by bus; ₹2,000-₹3,000 by car from Mahabaleshwar, with a journey time of 6-8 hours.
+                            - <u>Rail:</u> ₹300-₹1,000 to satara Junction, the nearest station, about 13 km from Mahabaleshwar.
+                            - <u>Air:</u> ₹2,500-₹5,000 to Mumbai, then ₹1,500-₹2,500 for a taxi or bus to Mahabaleshwar, totaling around 6-7 hours travel time.</h5>
+
+                        </div>
+                </div>
+                <div class="boxes">
+                    <u>Goa Beach</u>
+                    <img src="https://media.istockphoto.com/id/1368909948/photo/canacona-goa-india-canoe-kayak-for-rent-parked-on-famous-palolem-beach-on-background-tall.webp?b=1&s=170667a&w=0&k=20&c=GOsdloJnf-fcrr-A_Ajsj5KCa2bsnIGOkhDN_nucQsI=" alt="Goa Beach">
+                    <p>Description: Goa is famous for its stunning beaches, vibrant nightlife, and diverse culture. It is a perfect destination for beach lovers.</p>
+                    <button onclick="showPrice3()">More info</button>
+                    <div id="price-content3" style="display: none;">
+                        <h1>Prices:</h1>
+                        <h5>- <u>Road:</u> ₹500-₹1,500 by bus; ₹2,000-₹3,000 by car from Goa, with a journey time of 6-8 hours.
+                            - <u>Rail:</u> ₹300-₹1,000 to  Junction, the nearest station, about 13 km from Goa.
+                            - <u>Air:</u> ₹2,500-₹5,000 to Goa, then ₹1,500-₹2,500 for a taxi or bus to Goa, totaling around 6-7 hours travel time.</h5>
+                </div></div>
+                <div class="boxes">
+                    <u>Tirupati Balaji Temple, Andhra Pradesh</u>
+                    <img src="https://media.istockphoto.com/id/1268716417/photo/misty-tirupathi.webp?b=1&s=170667a&w=0&k=20&c=0vf7hLEbN9n_VKNSMNh1Z9H2iaBXerUKgJNDFyY7bWA=" alt="Tirupathi">
+                    <p>Description: Tirupathi is a significant pilgrimage site, known for the sacred Tirumala Venkateswara Temple.</p>
+                    <button onclick="showPrice4()">More info</button>
+                    <div id="price-content4" style="display: none;">
+                        <h1>Prices:</h1>
+                        <h5>- <u>Road:</u> ₹500-₹1,500 by bus; ₹2,000-₹3,000 by car from Tirumala, with a journey time of 6-8 hours.
+                            - <u>Rail:</u> ₹300-₹1,000 to  Junction, the nearest station, about 13 km from Tirumala.
+                            - <u>Air:</u> ₹2,500-₹5,000 to Tirupati, then ₹1,500-₹2,500 for a taxi or bus to Tirupati, totaling around 6-7 hours travel time.</h5>
+                            </div>
+                </div>
+            </div>
+        </div>
+        <div id="grievance">
+            <h2><u>Submit Your Grievance</u></h2>
+            <button onclick="toggleGrievanceForm()">Open Grievance Form</button>
+    
+            <div id="grievanceFormContainer" >
+                <form id="grievanceForm" name="grievanceForm" action="https://script.google.com/macros/s/AKfycbzXcbjaZ1N9ik3DRBNP7wetBVsRbLBsxywBx-P8JI7t9WeWGlhhpRdM9v5lhTMM-flgSA/exec" method="post" onsubmit="return submitGrievanceForm()">
+                    <fieldset>
+                        <legend><h3>Grievance Form</h3></legend>
+                        
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" maxlength="50" placeholder="Enter your name" required>
+    
+                        <label for="id">ID:</label>
+                        <input type="number" id="id" name="id" placeholder="Enter your ID" required>
+    
+                        <label for="email">Email ID:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+                        <label for="grievance">Grievance:</label>
+                        <textarea id="grievance" name="grievance" rows="5" placeholder="Describe your grievance" required></textarea>
+    
+    
+                        <input type="submit" value="Submit Grievance">
+                        <input type="reset" value="Reset">
+                    </fieldset>
+                </form>
+                <button onclick="toggleGrievanceForm()">Close</button>
+            </div>
+        </div>
+        <div id="page4">
+            <div id="box1">
+                <div class="card1">
+                    <img src="https://media.istockphoto.com/id/1325164545/photo/portrait-of-mature-business-men-wearing-suit-standing-against-gray-background-stock-photo.webp?s=2048x2048&w=is&k=20&c=Z_zERuHLweG80CwY7eAhWpxqkmjssCCSyy2zCFVITn4=" alt="Review">
+                    <h2>Vikas Singh</h2>
+                    <div class="stars">
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ullam.</p>
+                </div>
+                <div class="card2">
+                    <img src="https://media.istockphoto.com/id/1325164545/photo/portrait-of-mature-business-men-wearing-suit-standing-against-gray-background-stock-photo.webp?s=2048x2048&w=is&k=20&c=Z_zERuHLweG80CwY7eAhWpxqkmjssCCSyy2zCFVITn4=" alt="Review">
+                    <h2>Tony Holand</h2>
+                    <div class="stars">
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Quaerat, ullam.</p>
+                </div>
+            </div>
+        </div>
+       
+        <div id="contact">
+            <h2><u>Contact Us</u></h2>
+            <p>If you have any questions or need further information, please feel free to contact us.</p>
+            <div id="contact-details">
+                <p>Email: info@trekmateagency.com</p>
+                <p>Phone: +91-000-0000-0000</p>
+                <p>Address: 123 TrekMate Lane, x-city, India</p>
+                <h2><u>Follow us on</u></h2>
+                <h5><i class="ri-instagram-fill"></i>Instagram</h5>
+                <h5><i class="ri-facebook-fill"></i>Facebook</h5>
+                <h5><i class="ri-twitter-fill"></i>Twitter</h5>
+                <h5><i class="ri-linkedin-fill"></i>Linkedin</h5>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="tra.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+   
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+<df-messenger
+  intent="WELCOME"
+  chat-title="TrekMate Agency"
+  agent-id="YOUR_AGENT_ID"
+  language-code="en"
+></df-messenger>
+</body>
+</html>

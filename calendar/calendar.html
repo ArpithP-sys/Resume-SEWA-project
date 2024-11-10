@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Page</title>
+
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/core@5.10.0/main.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@5.10.0/main.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/timegrid@5.10.0/main.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS for page styling -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        #calendar {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Customize the calendar's header buttons */
+        .fc .fc-toolbar-chunk {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .fc-button {
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .fc-button:hover {
+            background-color: #0056b3;
+        }
+
+        .fc-button:focus {
+            outline: none;
+        }
+
+        /* Customize calendar event appearance */
+        .fc-event {
+            background-color: #ff7f50 !important;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .fc-event:hover {
+            background-color: #ff4500 !important;
+        }
+
+        .fc-daygrid-day:hover {
+            background-color: #f0f8ff;
+            cursor: pointer;
+        }
+
+        /* Add hover effect to date cells */
+        .fc-daygrid-day-number {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Calendar</h1>
+    <div id="calendar"></div>
+
+    <!-- FullCalendar Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@5.10.0/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@5.10.0/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/timegrid@5.10.0/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/interaction@5.10.0/main.min.js"></script>
+
+    <!-- Calendar Initialization Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',  // Show monthly view by default
+                editable: true,  // Allow events to be edited
+                selectable: true,  // Allow dates to be selected
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'  // Different calendar views
+                },
+                events: [
+                    {
+                        title: 'Event 1',
+                        start: '2024-09-25T10:00:00',
+                        end: '2024-09-25T12:00:00'
+                    },
+                    {
+                        title: 'Meeting',
+                        start: '2024-09-27',
+                        end: '2024-09-29'
+                    }
+                ],
+                // Triggered when a date is clicked
+                dateClick: function(info) {
+                    var title = prompt('Enter Event Title:');
+                    if (title) {
+                        calendar.addEvent({
+                            title: title,
+                            start: info.dateStr,
+                            allDay: true
+                        });
+                    }
+                },
+                // Event clicked
+                eventClick: function(info) {
+                    var remove = confirm('Delete this event?');
+                    if (remove) {
+                        info.event.remove();
+                    }
+                }
+            });
+
+            calendar.render();
+        });
+    </script>
+</body>
+</html>

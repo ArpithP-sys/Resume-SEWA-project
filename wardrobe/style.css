@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #4C4B99;
+    padding: 15px;
+    color: #fff;
+    z-index: 1000;
+}
+
+
+nav a.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+main {
+    margin-top: 70px;
+}
+
+#hero {
+    height: 100vh;
+    background: url('https://example.com/wardrobe-bg.jpg') center center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+#hero h2{
+    color: #000000;
+}
+
+#hero .btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    color: #4C4B99;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#hero .btn:hover {
+    background-color: #eee;
+}
+
+section {
+    margin: 40px 20px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    color: #000000;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+#wardrobe {
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.wardrobe-item {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    color: #4C4B99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.wardrobe-item:hover {
+    transform: scale(1.05);
+    background-color: #e0e0f7;
+}
+
+.calendar-button {
+    margin: 20px;
+    padding: 10px;
+    background-color: #4C4B99;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.calendar-button:hover {
+    background-color: #333;
+}
+#wardrobeGrid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.wardrobe-item {
+    width: 150px;
+    height: 150px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4C4B99;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wardrobe-item:hover {
+    transform: scale(1.05);
+    background-color: #e0e0f7;
+}
+
+.wardrobe-form {
+    margin-top: 30px;
+}
+
+.wardrobe-form input, .wardrobe-form button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1rem;
+}
+
+.wardrobe-form button {
+    background-color: #4C4B99;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wardrobe-form button:hover {
+    background-color: #3a3780;
+}
+
+#suggestionsOutput, #weatherOutput, #sustainabilityOutput {
+    margin-top: 20px;
+}
+
+#ecoFriendlyList {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+#ecoFriendlyList li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #4C4B99;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+  
+}
+
+/* Inventory Table */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #4C4B99;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #f0f0f0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.unsplash.com/photo-1506459225024-1428097a7e18'); /* Add background image */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#wardrobe {
+    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1531062589111-8d3c173db776'); /* Wardrobe section background */
+    background-size: cover;
+    padding: 40px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+#wardrobe h2 {
+    color: #000000;
+}
+
+.wardrobe-item {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    background-color: #4C4B99;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.wardrobe-item:hover {
+    transform: scale(1.05);
+    background-color: #6C63FF;
+}
+
+.wardrobe-form {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.wardrobe-form input,
+.wardrobe-form button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.wardrobe-form input:focus,
+.wardrobe-form button:focus {
+    outline: none;
+    border-color: #4C4B99;
+}
+
+#suggestions {
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#eco-friendly {
+    background-color: #c8e6c9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#weather-suggestion {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#sustainability-score {
+    background-color: #ffeb3b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0288d1;
+}
+
+#try-on-page .clothes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+#try-on-page .clothes img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#try-on-page .btn-try-on {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    #wardrobe-page .wardrobe-item {
+        width: calc(50% - 20px);
+    }
+
+    #calendar {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #suggestions-page .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    #wardrobe-page .wardrobe-item {
+        width: 100%;
+    }
+
+    #calendar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #suggestions-page .card {
+        width: 100%;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+
+form input,
+form select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0277bd;
+}

@@ -1,0 +1,419 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing:border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height:100%;
+    width:100%;
+}
+#header
+{
+height:10%;
+width:100%;
+position:fixed;
+display:flex;
+align-items: center;
+justify-content: space-around;
+background-image: url('WhatsApp Image 2024-08-07 at 10.48.06_db65a0d6.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+z-index: 200;
+}
+#fakeheader
+{
+    height:10%;
+    width:100%;
+    background-color: beige;
+}
+#logo
+{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bolder;
+   font-size: large;
+   color: orangered;
+   padding: 20px;
+}
+.texts
+{
+    color: orangered;
+    font-size: medium;
+}
+.texts:hover{
+    color: dodgerblue;
+}
+#login
+{
+    padding: 10px;
+    color: orangered;
+    display: flex;
+}
+
+#page1{
+    height: 90%;
+    width: 100%;
+    padding: 100px 200px;
+    font-size: 1.5em;
+}#page1 legend{
+    text-align: center;
+    font-style: oblique;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#button{
+    z-index: 30;
+}
+#bookingModal
+{
+ 
+    border-radius: 10px;
+}
+    
+#page1 h2{
+    font-weight: bolder;
+    z-index: 10;
+}
+#page1 form{
+    text-align: left;
+}
+#page1 p{
+
+z-index: 10;
+margin-bottom: 5%;
+
+}
+
+#page1 a{
+    z-index: 30;
+    height: 2%;
+    width:5%;
+    padding: 15px 15px;
+    border-radius: 5px;
+    color: #1680AC;
+    object-fit: cover;
+}
+#page1 video{
+    z-index: -1;
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+}
+ #page1 button:hover
+ {
+    color: #1680AC;
+ }
+
+#page2 b{
+    align-items: center;
+    font-size: xx-large;
+    justify-content: center;
+    padding: 600px 650px;
+    z-index: 15;
+}
+#page2 p{
+    padding: 0.4px 0.4px;
+    margin-left: 630px;
+    z-index: 15;
+}
+
+#page2{
+    height:50%;
+    width:100%;
+    
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow:hidden;
+    z-index: 15;
+}
+#card{
+    
+    height: 70%;
+    min-width: 50%;
+    text-align: center;
+    overflow: hidden;
+    margin-right: 2px;
+    box-shadow: 5px 5px 5px;
+    z-index: 30;
+}
+#page2::before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:200%;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf1ijBS6OYXHz0RlQ6xV1rf0z3iAfCTAcaug&s');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+
+#services {
+    height:100%;
+    width:100%;
+    background-color: aliceblue;
+    border-radius: 15px;
+    display:flex;
+    overflow-x: auto;
+    z-index: 15;
+}
+
+
+#page3{
+    height:90%;
+    width:100%;
+    position: relative;
+    overflow:hidden;
+    overflow-x: scroll;
+   justify-content: center;
+   object-fit: cover;
+    z-index: 20;
+}
+#page3::before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:200%;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf1ijBS6OYXHz0RlQ6xV1rf0z3iAfCTAcaug&s');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0.5;
+    z-index: -1;
+
+}
+#page3 b::before{
+    position: fixed;
+}
+
+
+
+#page3 b{
+    align-items: center;
+    font-size: xx-large;
+    justify-content: center;
+    padding: 600px 650px;
+    z-index: 15;
+}
+#page3 p{
+    
+    padding: 0.5px 0.5px;
+    margin-left: 640px;
+    z-index: 15;
+
+}
+.boxes{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    justify-content: start;
+    text-align: justify;
+}
+.boxes img{
+    height: 50%;
+    width:100%;
+    overflow: hidden;
+}
+#packages{
+    height:100%;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    z-index: 15;
+}
+#price-content {
+    display: none;
+}
+#packages .boxes{
+    margin-left:10px;
+    margin: 10px;
+    padding: 10px;
+    height: 70%;
+    min-width: 30%;
+    text-align: center;
+    overflow: hidden;
+    margin-right: 2px;
+    box-shadow: 5px 5px 5px;
+    z-index: 30;
+}
+.packages::-webkit-scrollbar{
+    width:0;
+}
+.packages::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+#page4{
+    height:90%;
+    width:100%;
+        position: relative;
+        overflow:hidden;
+        
+       justify-content: center;
+       object-fit: cover;
+        z-index: 20;
+}
+#page4::before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf1ijBS6OYXHz0RlQ6xV1rf0z3iAfCTAcaug&s');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0.5;
+    z-index: -1;
+
+}
+
+#box1
+{
+    height:50%;
+    width:100%;
+    display: flex;
+}
+.card1 img{
+    height: 50%;
+    width:100%;
+}
+.card1{
+   min-width: 20%;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 10%;
+    overflow: hidden;
+    background-color: white;
+    box-shadow:5px 8px 2px;
+    border-radius: 10px;
+}
+.card2 img{
+    height: 50%;
+    width:100%;
+}
+
+.card2{
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow:5px 8px 2px;
+    border-radius: 10px;
+}
+.card3 img{
+    height: 50%;
+    width:100%;
+}
+.card3{
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow:5px 8px 2px;
+    border-radius: 10px;
+}
+.card4 img{
+    height: 50%;
+    width:100%;
+}
+.card4{
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow:5px 8px 2px;
+    border-radius: 10px;
+}
+
+#box2
+{
+    height:50%;
+    width:100%;
+    font-size: larger;
+    padding: 100px 200px;
+}
+#box2-content{
+    display: flex;
+    justify-content: space-around;
+}
+#Quick-links a{
+    display: list-item;
+}
+#Extra-links a{
+    display: list-item;
+}
+#Contact a{
+    display: list-item;
+}
+#Follow a{
+    display:list-item;
+}
+#page2 {
+    overflow-x: auto;
+}
+
+#page2::-webkit-scrollbar {
+    height: 10px;
+}
+
+#page2::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+#card {
+    
+    height: 200px; /* adjust the height and width to fit your needs */
+    min-width: 30%;
+    text-align: center;
+    overflow: hidden;
+    margin-right: 2px;
+    box-shadow: 5px 5px 5px;
+    z-index: 50;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 100; 
+}
+
+.modal-bg {
+    background-color: rgba(0, 0, 0, 0.5); 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    z-index: 99; 
+}

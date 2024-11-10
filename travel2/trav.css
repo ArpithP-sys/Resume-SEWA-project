@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.texts {
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.texts p {
+    margin: 0;
+    color: #fff;
+}
+
+.texts button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#login {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#login p {
+    margin: 0 10px 0 0;
+}
+
+#fakeheader {
+    height: 50px;
+    background-color: #333;
+}
+
+#page1 {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://cdn.pixabay.com/photo/2015/09/18/20/55/mountains-949165_960_720.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+#page1 h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#page1 h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#page1 h3 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#page1 button {
+    background-color: #ff6600;
+    border: none;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+#page1 button:hover {
+    background-color: #cc5200;
+}
+
+.video-slide {
+    margin-top: 30px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+#page2 {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#card {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    text-align: center;
+    min-width: 200px;
+}
+
+#page3 {
+    padding: 50px;
+    text-align: center;
+    background-color: #eee;
+}
+
+#packages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.boxes {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+}
+
+.boxes img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#price-content {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#page4 {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#box1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.card1 {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.card1 h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card1 p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#box2 {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+#box2 h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+#box2 p {
+    font-size: 1.2rem;
+}

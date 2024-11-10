@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel tourism</title>
+    <script>
+       function welcome()
+       {
+        window.open("https://www.youtube.com/watch?v=34MBVXsDOtA&t=2082s")
+       }
+        function tree()
+        {
+            window.open("#box2")
+        }
+        function showModal() {
+            document.getElementById("bookingModal").style.display = "block";
+        }
+        function hideModal() {
+            document.getElementById("bookingModal").style.display = "none";
+        }
+        function showPrice() {
+    var priceContent = document.getElementById("price-content");
+    if (priceContent.style.display === "none") {
+        priceContent.style.display = "block";
+    } else {
+        priceContent.style.display = "none";
+    }
+}
+    </script>
+    <link rel="stylesheet" href="travel.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    
+
+</head>
+<body>
+    <div id="main">
+    <div id="header">
+        <div id="logo">
+            TREKMATE AGENCY
+        </div>
+        <div class="texts"><p>Home</p></div>
+        <div class="texts"><p>Booking</p></div>
+        <div class="texts"><p>Services</p></div>
+        <div class="texts"><p>Packages</p></div>
+        <div class="texts"><p>Review</p></div>
+        <button onclick="tree()"><div class="texts"><p>Contact us</p></div></button>
+        <div id="login">
+            <p>login</p>
+            <i class="ri-user-line"></i>
+        </div>
+    </div>    
+    <div id="fakeheader"></div>
+    <div id="page1">
+        <p>
+        <h1>Welcome</h1>
+        <h2>To Our Website!</h2>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cumque atque eius amet minus reiciendis beatae velit, molestias necessitatibus. Consequatur aperiam laborum maiores error placeat pariatur, officiis recusandae iste animi!</h3></p>
+        <button onclick="welcome()"><a href="#">
+        Explore More
+        </a></button>
+        <button onclick="showModal()">BOOK NOW<i class="ri-arrow-right-fill"></i></button> <div id="bookingModal" class="modal">
+           <form id="bookingform" name="f1" method="get">
+            <legend>Booking form</legend>
+                <pre>
+                NAME:<input type="text" name="t1" maxlength="20" size="10" placeholder="name">
+                Mobile number:<input type="tel" name="t3">
+                Email-id:<input type="email" name="email">
+                Aadhar-number:<input type="number" name="AADHAR">
+                Source:<input type="text" name="t2" placeholder="From">
+                Destination:<input type="text" name="t3" placeholder="To">
+                Date:<input type="date" name="t4">
+                <input type="submit" value="submit-booking">
+                <input type="reset" value="reset"></form>
+        </div>
+        
+        <video class="video-slide" src="https://cdn.pixabay.com/video/2024/08/05/225046_tiny.mp4" autoplay muted loop></video>
+       
+        
+    </div>
+    <div id="page2">
+        <b>Our Services</b>
+        <p>____________________________</p>
+        <div id="services">
+            
+            <div id="card">greferfregu
+                
+            </div>
+            <div id="card">hrifverhfrefhw9or</div>
+            <div id="card">iotjgvoierjio</div>
+            <div id="card">bjkndfnvire</div>
+            <div id="card">oitgvrojti</div>
+
+        </div>
+    </div>
+    <div id="page3">
+        <b>Our Packages</b>
+        <p>____________________________</p>
+        <div id="packages">
+            <div class="boxes">
+                Hampi, Karnataka
+                <img src="https://media.istockphoto.com/id/1343698748/photo/ancient-stone-ruins-at-hampi-karnataka-india.jpg?s=1024x1024&w=is&k=20&c=72ItHn378WJuNnagG3JPawrfl5gyUX0wN5-BXPGQLBE=">
+                Information: Hampi, a UNESCO World Heritage Site, is renowned for its ancient temples, ruins of palaces, and a historical bazaar. The Virupaksha Temple and Vittala Temple with its musical pillars are major attractions here.
+                <button onclick="showPrice()">Price</button>
+                    <div id="price-content" style="display: none;">
+                        <p>Price: ₹10,000</p>
+                </div>
+            </div>
+                
+                  
+            <div class="boxes">
+                Taj Mahal,Agra
+                <img src="https://media.istockphoto.com/id/159371791/photo/taj-mahal-india.webp?b=1&s=170667a&w=0&k=20&c=IPjo8c4hGjc0AK0rwOjviG9q8vug3-pHbgoyq6SBOtI=">
+                <p>dhcebuefeuui</p>
+            </div>
+            <div class="boxes">Mahabaleshwar,Maharashtra
+                <img src="https://media.istockphoto.com/id/1060805460/photo/a-grid-on-the-fort.webp?b=1&s=170667a&w=0&k=20&c=a8XD7kHm-CAj4Few8kFFbaVDCNMpmGxE2ecbRLD-pnk=">
+                <p>nifdedifnierien</p>
+
+            </div>
+            <div class="boxes">Goa Beach
+                <img src="https://media.istockphoto.com/id/1368909948/photo/canacona-goa-india-canoe-kayak-for-rent-parked-on-famous-palolem-beach-on-background-tall.webp?b=1&s=170667a&w=0&k=20&c=GOsdloJnf-fcrr-A_Ajsj5KCa2bsnIGOkhDN_nucQsI=">
+                <p>dceiruferfiei</p>
+            </div>
+            <div class="boxes">Tirupathi Balaji Temple,Andhra Pradesh
+                <img src="https://media.istockphoto.com/id/1268716417/photo/misty-tirupathi.webp?b=1&s=170667a&w=0&k=20&c=0vf7hLEbN9n_VKNSMNh1Z9H2iaBXerUKgJNDFyY7bWA=">
+                <p>edfuieueiniun</p>
+            </div>
+            <div class="boxes"> Wet'N Joy
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlHXV-cHoaUcCyagdT-5FZYP13VHZxW0IoKw&s">
+                <p>edfuieueiniun</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="page4">
+        <div id="box1">
+        <div class="card1">
+            <img src="https://media.istockphoto.com/id/1325164545/photo/portrait-of-mature-business-men-wearing-suit-standing-against-gray-background-stock-photo.webp?s=2048x2048&w=is&k=20&c=Z_zERuHLweG80CwY7eAhWpxqkmjssCCSyy2zCFVITn4=">
+            <h2>John Deo</h2>
+            <div class="stars">
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+            </div>
+            <p>dfggyegge</p>
+        </div>
+        <div class="card2">
+            <img src="https://media.istockphoto.com/id/1325164545/photo/portrait-of-mature-business-men-wearing-suit-standing-against-gray-background-stock-photo.webp?s=2048x2048&w=is&k=20&c=Z_zERuHLweG80CwY7eAhWpxqkmjssCCSyy2zCFVITn4=">
+            <h2>John Deo</h2>
+            <div class="stars">
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+            </div>
+            <p>dfggyegge</p>
+        </div>
+        <div class="card3">
+            <img src="https://media.istockphoto.com/id/1325164545/photo/portrait-of-mature-business-men-wearing-suit-standing-against-gray-background-stock-photo.webp?s=2048x2048&w=is&k=20&c=Z_zERuHLweG80CwY7eAhWpxqkmjssCCSyy2zCFVITn4=">
+            <h2>John Deo</h2>
+            <div class="stars">
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+            </div>
+            <p>dfggyegge</p>
+        </div>
+        <div class="card4">
+            <img src="https://media.istockphoto.com/id/1325164545/photo/portrait-of-mature-business-men-wearing-suit-standing-against-gray-background-stock-photo.webp?s=2048x2048&w=is&k=20&c=Z_zERuHLweG80CwY7eAhWpxqkmjssCCSyy2zCFVITn4=">
+            <h2>John Deo</h2>
+            <div class="stars">
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+            </div>
+            <p>dfggyegge</p>
+        </div>
+                       
+        </div>
+        <div id="box2" >
+            <div id="box2-content">
+
+                    <div id="Quick-links">
+                        <h1>Quick Links</h1>
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Package</a>
+                        <a href="#">Book</a>
+                    </div>
+                    <div id="Extra-links">
+                        <h1>Extra Links</h1>
+                        <a href="#">Ask Questions</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms Of Use</a>
+                    </div>
+                    <div id="Contact">
+                        <h1>Contact Info</h1>
+                        <h3>Telephone No.:+123-456-7890</h3>
+                        <a href="#"><h3>Email:xyz@gmail.com</h3></a>
+                        <h3>Mumbai, India - 400104</h3>
+                    </div>
+                    <div id="Follow">
+                        <h1>Follow Us</h1>
+                        <a href="#"><i class="ri-facebook-fill"></i>Facebook</a>
+                        <a href="#"><i class="ri-twitter-fill"></i>Twitter</a>
+                        <a href="#"><i class="ri-instagram-fill"></i>Instagram</a>
+                        <a href="#"><i class="ri-linkedin-fill"></i>LinkedIn</a>
+                    </div>
+                    </div>
+        
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

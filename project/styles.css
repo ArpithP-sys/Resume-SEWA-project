@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Light blue background */
+    color: #333;
+    transition: background-color 0.3s ease;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+}
+
+.back-btn {
+    background-color: #42a5f5;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #1e88e5;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Main content wrapper width */
+    margin-top: 60px;
+    flex-wrap: wrap; /* Ensure cards wrap below one another when screen is small */
+}
+
+/* Sidebar for Project A & B */
+.sidebar {
+    flex-basis: 45%;
+    background-color: #bbdefb; /* Light blue */
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 22px; /* Increase text size */
+}
+
+.project-section h3 {
+    color: #1976d2; /* Dark blue color for text */
+    margin-bottom: 20px;
+}
+
+.project-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.project-section ul li {
+    margin: 15px 0;
+}
+
+.project-section ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-section ul li a:hover {
+    color: #1565c0; /* Darker blue on hover */
+}
+
+/* Overlapping Details Section */
+.overlapping-section {
+    flex-basis: 45%;
+    background-color: #fff;
+    padding: 25px;
+    margin-left: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+   
+}
+
+.box {
+    border: 1px solid #90caf9; /* Light blue border */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Set box width to take full available width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 22px; /* Larger text inside box */
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h4 {
+    color: #1976d2;
+}
+
+/* Bottom icons */
+.bottom-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.icon-btn {
+    background-color: #42a5f5;
+    color: white;
+    padding: 20px 40px; /* Bigger buttons */
+    margin: 0 15px;
+    font-size: 20px; /* Larger font for buttons */
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-btn:hover {
+    background-color: #1e88e5;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Add New Project Button */
+.add-project {
+    margin-top: 20px;
+    margin-left:618px;
+}
+
+.add-project-btn {
+    background-color: #29b6f6;
+    color: white;
+    padding: 25px 60px; /* Larger Add Project Button */
+    font-size: 20px; /* Larger text size */
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-project-btn:hover {
+    background-color: #0288d1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Discussion Forum Button */
+.discussion-btn {
+    background-color: #29b6f6;
+    color: white;
+    padding: 15px 30px; /* Larger Discussion button */
+    font-size: 20px; /* Larger text size */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discussion-btn:hover {
+    background-color: #0288d1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
